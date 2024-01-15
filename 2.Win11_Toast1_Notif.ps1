@@ -38,7 +38,7 @@ If (Test-Path -Path $Capable) {
     $winTitle = "Operating System Upgrade Notice"
     $depAttention = "Advance Business Systems"
     $subTitle = "Windows 11 Upgrade"
-    $bodText = $bodText = "The Windows 11 Upgrade will download and install in the background while you are working.`n`nPlease do not shutdown or reboot your computer during this process.`n`nYou will be notified a second time to when the update has completed."
+    $bodText = $bodText = "The Windows 11 Upgrade will download and install in the background while you are working.`n`nPlease do not shutdown or reboot your computer during this process.`n`nYou will be notified again once the update has completed."
     # TitleOnly ImageOnly ImageAndTitle
     $hdrFormat = "ImageOnly" 
     $audSource = "ms-winsoundevent:Notification.Default"
