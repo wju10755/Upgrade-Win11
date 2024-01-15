@@ -8,7 +8,7 @@ $Download = "https://raw.githubusercontent.com/wju10755/Upgrade-Win11/main/3.Win
 
 $Install =  "https://raw.githubusercontent.com/wju10755/Upgrade-Win11/main/4.Windows11_Install.ps1"
 
-$Toast2 = "https://raw.githubusercontent.com/wju10755/Upgrade-Win11/main/5.Win11_Toast2_Notif.ps1"
+$Toast2 = "https://raw.githubusercontent.com/wju10755/Upgrade-Win11/main/5.Win11_Toast2_Notify.ps1"
 
 $Dir = "c:\install"
 
