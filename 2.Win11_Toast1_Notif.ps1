@@ -35,17 +35,13 @@ If (Test-Path -Path $Capable) {
     # https://github.com/Windos/BurntToast/blob/master/Installer/BurntToast.msi
 
     # Required
-    $winTitle = "Technology Notification"
-    $depAttention = "YOUR COMPANY, Inc."
+    $winTitle = "Operating System Upgrade Notice"
+    $depAttention = "Advance Business Systems"
     $subTitle = "Windows 11 Upgrade"
     $bodText = $bodText = "The Windows 11 Upgrade will download and install in the background while you are working.`n`nPlease do not shutdown or reboot your computer during this process.`n`nYou will be notified a second time to when the update has completed."
     # TitleOnly ImageOnly ImageAndTitle
     $hdrFormat = "ImageOnly" 
     $audSource = "ms-winsoundevent:Notification.Default"
-
-
-    # Could be used to open the SCCM Software Center right to App Install. Using Software Center Shared Links --- Applications in SCCM Console
-    # $SoftwareCenterShortcut= “softwarecenter:SoftwareID=Site_8E25450A-4C7E-4508-B501-B3F0E2C91541/SUM_99d11a78-2df9-48e9-985e-11968f50fbcd”
 
     # Register AppID
     $regPath = 'HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings'
