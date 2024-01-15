@@ -11,12 +11,12 @@ This script was born out of frustration with the Windows 11 Upgrade Assistant ju
 
 2.Win11_Toast1_Notif.ps1
 - **Run as logged in user.**
-- At the top I set variables for the NOT CAPABLE document to be later output by the "Not Capable" Toast notification.
+- There are variables for the NOT CAPABLE document to be later output by the "Not Capable" Toast notification.
 - Everything from here on out in the remainder of the scripts is dependant on either file existing.
 
 3.Windows11_Download.ps1
 - **Run as logged in user.**
-- https://www.microsoft.com/software-download/windows11 This is where you can generate a new download key. It lasts for 24 hours. Just replace it in the script.
+- https://www.microsoft.com/software-download/windows11 This is where you can generate a new download key. It lasts 24 hours.
 
 4.Windows11_Install.ps1
 - **Run as System.**
