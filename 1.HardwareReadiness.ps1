@@ -10,11 +10,10 @@ else {
 ####                                                  Force Enable Windows Notifications                                                 ####
 #############################################################################################################################################
 
-$FileName = Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications\" -Name "ToastEnabled"
-If ($FileName.ToastEnabled -eq 0) {
-    Set-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications" -Name ToastEnabled -Value 1 -Force
-    Get-Service -Name WpnUserService* | Restart-Service -Force
-    Start-Sleep 10
+# Check and install BurntToast Module if not found
+if (-not (Get-Module -Name BurntToast -ErrorAction SilentlyContinue)) {
+    Install-Module -Name BurntToast -Scope CurrentUser -Force -WarningAction SilentlyContinue | Out-Null
+    Import-Module BurntToast 
 }
 
 #############################################################################################################################################
