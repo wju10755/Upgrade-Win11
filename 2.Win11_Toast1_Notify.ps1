@@ -35,8 +35,8 @@ If (Test-Path -Path $Capable) {
     # https://github.com/Windos/BurntToast/blob/master/Installer/BurntToast.msi
 
     # Required
-    $winTitle = "Upgrade Notification"
-    $depAttention = "Advance Business Systems"
+    $winTitle = "Advance Business Systems"
+    $depAttention = "Managed IT"
     $subTitle = "Windows 11 Upgrade"
     $bodText = $bodText = "The Windows 11 Upgrade will download and install in the background while you are working.`n`nPlease do not shutdown or reboot your computer during this process.`n`nYou will be notified again once the update has completed."
     # TitleOnly ImageOnly ImageAndTitle
