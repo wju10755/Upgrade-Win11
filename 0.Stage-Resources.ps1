@@ -43,7 +43,12 @@ try {
     & "$Dir\3.Windows11_Download.ps1"
     if (Test-Path $ISO) {
     & "$Dir\4.Windows11_Install.ps1"
-    & "$Dir\5.Win11_Toast2_Notify.ps1"
+    $setup = Get-Process setup*
+    while ($setup -ne $null) {
+        Write-Host "Waiting for setup.exe to exit..."
+        Start-Sleep -Seconds 5
+        & "$Dir\5.Win11_Toast2_Notify.ps1"
+    }
     }
     }
 }

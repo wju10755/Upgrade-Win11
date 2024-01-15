@@ -3,7 +3,7 @@ If (Test-Path -Path $Capable) {
     Start-Job -Name Install -ScriptBlock {
         #Mount Image
         $DriveLetter = "U:"
-        $Path = "C:\Install\Windows11Upgrade.iso"
+        $Path = "C:\Install\Win11_23H2-x64v2.iso"
         $DiskImg = Mount-DiskImage -ImagePath $Path -NoDriveLetter
         $VolInfo = $DiskImg | Get-Volume
         mountvol $DriveLetter $VolInfo.UniqueId
