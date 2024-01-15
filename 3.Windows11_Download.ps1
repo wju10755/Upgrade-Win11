@@ -7,7 +7,7 @@ If (Test-Path -Path $Capable) {
         $Path = "C:\Install\Win11_23H2-x64v2.iso"
         Invoke-WebRequest -Uri $URL -OutFile $Path 
     }
-    Wait-Job -Name WebReq
+    Wait-Job -Name Win11-DL
 }
 
 
